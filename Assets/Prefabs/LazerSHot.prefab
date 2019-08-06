@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7156140669430409179}
   - component: {fileID: 7156140669430409178}
   - component: {fileID: 7156140669430409177}
+  - component: {fileID: 2889913279328567435}
   m_Layer: 0
   m_Name: LazerSHot
   m_TagString: Untagged
@@ -63,6 +64,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 34
+--- !u!136 &2889913279328567435
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7156140669430409176}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.1735084
+  m_Height: 2.003019
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7156140670515919155
 GameObject:
   m_ObjectHideFlags: 0

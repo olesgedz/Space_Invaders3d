@@ -12,7 +12,7 @@ public class ShotScript : MonoBehaviour
 
     void  Update()
     {
-        if (GetComponent<Rigidbody>().position.z > 30)
-            Destroy(gameObject); 
+        // if (GetComponent<Rigidbody>().position.z > 30)
+        //     Destroy(gameObject); 
     }
 }

@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > nextShotTime)
+        if (Time.time > nextShotTime && Input.GetButton("Fire1"))
         {
             Instantiate(lazerShot, gunPosition.position, Quaternion.identity);
             nextShotTime = Time.time + shotDelay;
