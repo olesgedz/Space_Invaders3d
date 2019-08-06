@@ -17,6 +17,7 @@ public class Scroller : MonoBehaviour
     void Update()
     {
         float newPosition = Mathf.Repeat(Time.time * speed, (float)65.8);
+       
         transform.position = startPostion + Vector3.back * newPosition;
     }
 }
