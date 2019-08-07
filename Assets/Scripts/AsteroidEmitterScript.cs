@@ -5,7 +5,6 @@ using UnityEngine;
 public class AsteroidEmitterScript : MonoBehaviour
 {
     public GameObject[] asteroidArr;
-    public GameObject asteroid;
     public float minDelay, maxDelay;
     private float nextSpawn;
     // Start is called before the first frame update

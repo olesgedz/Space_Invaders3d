@@ -699,7 +699,7 @@ Transform:
   m_GameObject: {fileID: 1354437458}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.3, y: 0, z: -24.7}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 165785039}
   - {fileID: 1839168300}
@@ -848,11 +848,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   asteroidArr:
-  - {fileID: 8482239821938628102, guid: bd657b823822147bb950c5d5027dddea, type: 3}
-  - {fileID: 7001609695039170573, guid: 1441657aabed34f64b5ea7cce05ff0f8, type: 3}
-  - {fileID: 5159669205370133364, guid: 60a261706b79c48ae8bb2aed07a71fc4, type: 3}
-  asteroid: {fileID: 8482239821938628102, guid: bd657b823822147bb950c5d5027dddea,
-    type: 3}
+  - {fileID: 4927233270630768815, guid: b9704577ea3c7455586ed73572827cbb, type: 3}
+  - {fileID: 4927233270630768815, guid: b9704577ea3c7455586ed73572827cbb, type: 3}
+  - {fileID: 4927233270630768815, guid: b9704577ea3c7455586ed73572827cbb, type: 3}
   minDelay: 3
   maxDelay: 7
 --- !u!23 &1523752352
