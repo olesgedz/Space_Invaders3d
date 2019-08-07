@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AsteroidEmitterScript : MonoBehaviour
 {
+    public GameObject[] asteroidArr;
     public GameObject asteroid;
     public float minDelay, maxDelay;
     private float nextSpawn;
@@ -23,7 +24,8 @@ public class AsteroidEmitterScript : MonoBehaviour
             float xPosition = Random.Range(-transform.localScale.x/2, transform.localScale.x/2);
             Debug.Log(xPosition);
             Vector3 newPosition = new Vector3(xPosition, yPosition, zPosition);
-            Instantiate(asteroid, newPosition, Quaternion.identity);
+            int randomNum = Random.Range(0, asteroidArr.Length);
+            Instantiate(asteroidArr[randomNum], newPosition, Quaternion.identity);
             nextSpawn = Time.time + Random.Range(minDelay, maxDelay);
         }
     }
