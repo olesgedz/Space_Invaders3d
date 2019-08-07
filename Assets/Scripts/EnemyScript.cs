@@ -10,7 +10,7 @@ public class EnemyScript : MonoBehaviour
     public float rotationSpeed;
 
     public float minSpeed, maxSpeed;
-
+    public Player playerClass;
     public GameObject Player;
     public GameObject asteroidExplosion;
     public GameObject playerExplosion;
@@ -29,7 +29,10 @@ public class EnemyScript : MonoBehaviour
     {
         Asteroid = GetComponent<Rigidbody>();
         Asteroid.angularVelocity = Random.insideUnitSphere * rotationSpeed;
-        Asteroid.velocity = Vector3.back * Random.Range(minSpeed, maxSpeed);
+        if (gameObject.tag == "EnemyShipDiagonal")
+            Asteroid.velocity =  (Player.transform.position - gameObject.transform.position).normalized * Random.Range(minSpeed, maxSpeed);
+        else
+            Asteroid.velocity =  -transform.forward * Random.Range(minSpeed, maxSpeed);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -41,7 +44,7 @@ public class EnemyScript : MonoBehaviour
         Instantiate(asteroidExplosion, transform.position, Quaternion.identity);
         if (other.tag == "Player")
         {
-          Instantiate(playerExplosion, other.transform.position, Quaternion.identity);
+            Player.GetComponent<Player>().LoseLife();
         }
         Destroy(other.gameObject);
         Destroy(gameObject);

@@ -82,6 +82,7 @@ MonoBehaviour:
     type: 3}
   playerExplosion: {fileID: 3359187188502294064, guid: ea49785cb83e142098dd485354f19f0c,
     type: 3}
+  Player: {fileID: 890709538339962309, guid: 6700f1edb64a5468792cec9840448efe, type: 3}
 --- !u!1001 &6308476624216462325
 PrefabInstance:
   m_ObjectHideFlags: 0

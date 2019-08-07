@@ -21,7 +21,7 @@ public class AsteroidEmitterScript : MonoBehaviour
             float yPosition = transform.position.y;
             float zPosition = transform.position.z;
             float xPosition = Random.Range(-transform.localScale.x/2, transform.localScale.x/2);
-            Debug.Log(xPosition);
+            //Debug.Log(xPosition);
             Vector3 newPosition = new Vector3(xPosition, yPosition, zPosition);
             int randomNum = Random.Range(0, asteroidArr.Length);
             Instantiate(asteroidArr[randomNum], newPosition, Quaternion.identity);

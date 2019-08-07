@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public float tilt;
     public float xMin, xMax, zMin, zMax;
 
+    public float life;
     public GameObject lazerShot;
     public GameObject lazerShotSide;
 
@@ -25,9 +26,22 @@ public class Player : MonoBehaviour
     private float nextShotTime;
     private float nextShotTimeSide;
 
+    public GameObject playerExplosion;
+
     void Start()
     {
+    }
 
+    public void LoseLife()
+    {
+        // life -= 1;
+        // Debug.Log("Lost life");
+        // if (life <= 0)
+        // {
+        //     life = 1;
+         Instantiate(playerExplosion, this.transform.position, Quaternion.identity);
+        //Destroy(gameObject);
+        //}
     }
 
     // Update is called once per frame

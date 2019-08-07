@@ -109,7 +109,9 @@ MonoBehaviour:
   rotationSpeed: 0
   minSpeed: 10
   maxSpeed: 20
-  Player: {fileID: 8412405454647535935, guid: 6700f1edb64a5468792cec9840448efe, type: 3}
+  playerClass: {fileID: 890709538339962308, guid: 6700f1edb64a5468792cec9840448efe,
+    type: 3}
+  Player: {fileID: 890709538339962309, guid: 6700f1edb64a5468792cec9840448efe, type: 3}
   asteroidExplosion: {fileID: 9218380855223979903, guid: 4efdc7b0d0fda4d86b5f96c8798bb04a,
     type: 3}
   playerExplosion: {fileID: 3359187188502294064, guid: ea49785cb83e142098dd485354f19f0c,

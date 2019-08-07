@@ -8,6 +8,8 @@ public class ShotScript : MonoBehaviour
     public GameObject asteroidExplosion;
     public GameObject playerExplosion;
 
+    public GameObject Player;
+
 
     void Start()
     {
@@ -29,7 +31,7 @@ public class ShotScript : MonoBehaviour
         Instantiate(asteroidExplosion, transform.position, Quaternion.identity);
         if (other.tag == "Player")
         {
-          Instantiate(playerExplosion, other.transform.position, Quaternion.identity);
+            Player.GetComponent<Player>().LoseLife();          
         }
         Destroy(other.gameObject);
         Destroy(gameObject);
